@@ -12,7 +12,7 @@
         <nav id="navbar">
             <div class="logo">
                 <a href="index.html">
-                    <img src="logo.png" alt="玄枭科技Logo">
+                    <img src="logo_1.png" alt="玄枭科技Logo">
                 </a>
             </div>
             <ul class="nav-links">
@@ -37,7 +37,7 @@
             </div>
             <div class="product-content">
                 <div class="product-description">
-                    <p>这是一个产品</p>
+                    <p id="product-text">这是一个产品</p>
                     <a href="index.html#products" class="back-btn"><i class="fas fa-arrow-left"></i> 返回产品列表</a>
                 </div>
             </div>
@@ -47,8 +47,8 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="logo.png" alt="玄枭科技Logo">
-                <p>玄枭科技 © 2023</p>
+                <img src="logo_1.png" alt="玄枭科技Logo">
+                <p>玄枭科技 © 2025</p>
             </div>
             <div class="footer-links">
                 <div class="footer-section">
@@ -63,23 +63,23 @@
                 <div class="footer-section">
                     <h4>联系我们</h4>
                     <ul>
-                        <li><i class="fas fa-envelope"></i> contact@xuanxiao.tech</li>
-                        <li><i class="fas fa-phone"></i> +86 123 4567 8910</li>
-                        <li><i class="fas fa-map-marker-alt"></i> 中国，科技大道88号</li>
+                        <li><i class="fas fa-envelope"></i></li>
+                        <li><i class="fas fa-phone"></i></li>
+                        <li><i class="fas fa-map-marker-alt"></i></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>关注我们</h4>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-weibo"></i></a>
-                        <a href="#"><i class="fab fa-weixin"></i></a>
-                        <a href="#"><i class="fab fa-bilibili"></i></a>
+                        <!-- <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-weixin"></i></a> -->
+                        <a href="https://space.bilibili.com/89657862?spm_id_from=333.337.0.0"><i class="fab fa-bilibili"></i></a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>版权所有 © 2023 玄枭科技 | 保留所有权利</p>
+            <p>版权所有 © 2025 玄枭科技 | 保留所有权利</p>
         </div>
     </footer>
 
@@ -92,21 +92,73 @@
             
             // 根据产品ID设置标题
             const productTitle = document.getElementById('product-title');
+            const productContent = document.getElementById('product-text');
             
             if (productId === 'xiaoyuan') {
                 productTitle.textContent = '小源AI';
                 document.title = '小源AI - 玄枭科技';
+                productContent.innerHTML = `
+                <p>
+                        在冰冷的科技时代，一个有温度的AI伙伴——小源。它不仅是你的朋友，更是情感陪伴者。通过仿生记忆引擎与多模态交互系统，小源能记住你的喜好、感知你的情绪，在每一次对话中与你共同成长。<br/><p>
+                    为什么选择小源？<br/><p>
+                    ▸ 比智能音箱更懂你：共情力+实用性+专业性<br/>
+                    ▸ 比手机平板更专注：无信息流干扰，所有交互只为「你」的需求而生<br/>
+                    ▸ 比现实陪伴更持久：7×24小时陪伴，记忆永不褪色<br/><p>
+                     [让科技真正成为"有生命"的存在]<br/><p>
+                
+                
+                
+                
+                
+                
+                `;
+                
             } else if (productId === 'energy') {
                 productTitle.textContent = '无尽能源';
                 document.title = '无尽能源 - 玄枭科技';
+                productContent.innerHTML = `
+                <p>
+                   
+                     在宇宙的深邃帷幕下，古老文明的能源争夺战一触即发。<br/><p>
+                     玄筱、星寂，驾驶“隧氚号”穿梭星际，直面哈迪斯文明的掠夺军团。守护宙核、拯救濒临崩溃的星系，并在绝望中撕开一道属于合作与勇气的裂口。<br/><p>
+                        于荒漠星球躲避沙暴，用源矿交易换取生存资源；<br/>
+                            在寄生森林智斗外星生物，借自然之力摧毁巢穴<br/>
+                                飞跃微重力小行星，用喷气背包挑战物理极限<br/>
+                                    直面宙核争夺战，以战舰对轰、地面布防的立体攻防，守护文明火种<br/><p>
+                                        [当能源成为战争的导火索，唯有信任与协作，能点燃希望之光]
+                
+                
+                
+                
+                `;
             } else if (productId === 'dream') {
                 productTitle.textContent = '异梦：灯影';
                 document.title = '异梦：灯影 - 玄枭科技';
+                productContent.innerHTML = `<p>
+                    一段关于光与影的羁绊，一场跨越现实的幻想之旅</br><p>在世界的缝隙中，藏着一个由幻想编织的岛屿。这里是莱莱与哒哒的乐园</br><p>
+                        直到一场裹挟着雷暴的黑色云团吞噬了天空，将岛屿割裂成漂浮的碎片。光与影的平衡被打破，黑暗侵蚀着莱莱的勇气，强光灼烧着哒哒的形体。唯有彼此依存，才能在这片逐渐崩坏的幻境中，寻回通往现实的钥匙。<br/><p>
+                            「你的光明是我的牢笼，我的黑暗是你的深渊」<br/><p>`
+
+
             } else if (productId === 'blade') {
                 productTitle.textContent = '终末之刃';
                 document.title = '终末之刃 - 玄枭科技';
+                productContent.innerHTML = `<p>
+                    在绝望的废土中，斩破命运的轮回<br/><p>
+                    核战争后的世界，地表化为焦土，天空永夜无光。人类蜷缩于地下庇护所，依靠名为“火石”的能源苟延残喘。而传说中，通往地心深处的“神门”埋藏着终极能源“焰心”，足以终结这场无尽的苦难。作为庇护所的克隆战士，你背负使命踏入神门，却在一次次死亡与重生中，揭开世界崩坏的残酷真相……<br/><p>
+                    结合精准操作与策略连击，体验刀光剑影的史诗级战斗。武器、义体、防具自由搭配，打造专属战斗流派——用燃烧巨斧撕裂敌人，或以时间震荡器暂停战场，逆转绝境。<br/><p>
+                    "火终将熄灭，但人类从未停止追寻光明。"<br/>
+                    —— 踏入《终末之刃》，在绝望的深渊中，斩断轮回，书写属于你的终章。<br/><p>
+                        准备好直面真相了吗？<br/>
+
+                    
+                    </p>`
+                
+               
             }
         });
     </script>
 </body>
 </html>
+
+<!

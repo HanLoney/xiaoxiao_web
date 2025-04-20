@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap");
 
 :root {
-  --primary-color: #6e00ff;
-  --secondary-color: #00c2ff;
-  --accent-color: #ff00aa;
+  --primary-color: #00d9ff;
+  --secondary-color: #2dbcff;
+  --accent-color: #ffffff;
   --dark-bg: #0a0a14;
   --darker-bg: #05050a;
   --light-text: #f0f0f0;
@@ -67,7 +67,7 @@ header.scrolled {
 
 .logo {
   /* 添加右边距，与导航项分开 */
-  margin-right: 16rem;
+  margin-right: 1rem;
 }
 
 .logo img {
@@ -523,6 +523,8 @@ section {
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  word-break:break-all;
+  word-wrap: break-word;
 }
 
 .product-description p {
@@ -567,8 +569,9 @@ footer {
 }
 
 .footer-logo img {
-  height: 80px;
-  margin-bottom: 6rem;
+  margin-left: -50px;
+  height: 150px;
+  margin-bottom: 1rem;
   width: auto;
 }
 
